@@ -1,0 +1,14 @@
+var net  =  require('net');
+
+var server = net.createServer((connection) => {
+    console.log('Client Connected');
+    connection.on('end', function () {
+        console.log('client disconnected')
+    });
+    connection.write('Hello world');
+    connection.pipe(connection)
+});
+
+server.listen(8080, function () {
+    console.log('Server running on http://localhost:8080');
+});

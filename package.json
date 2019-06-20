@@ -1,0 +1,28 @@
+{
+  "name": "desktopapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "build"
+  },
+  "author": "“Govind <“khandelwalgovind471@gmail.com”>",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "node-notifier": "^5.4.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron-builder": "^20.44.2"
+  },
+  "build": {
+    "appId": "com.example.electron-cra",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
