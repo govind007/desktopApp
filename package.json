@@ -12,7 +12,7 @@
   "author": "“Govind <“khandelwalgovind471@gmail.com”>",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "node-notifier": "^5.4.0"
   },
   "devDependencies": {
